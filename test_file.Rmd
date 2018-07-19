@@ -1,0 +1,22 @@
+---
+title: "Untitled"
+author: "Collin K. Berke, Ph.D."
+date: "7/18/2018"
+output: word_document
+---
+
+```{r Test, echo = FALSE}
+
+library(ggplot2)
+
+cars <- data.frame(mtcars)
+
+View(cars)
+
+names(cars)
+
+ggplot(cars, aes(x = hp, y = mpg)) +
+  geom_point()
+
+```
+
